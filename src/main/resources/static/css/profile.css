@@ -1,0 +1,11 @@
+* {
+  color: #FFFCF2;
+}
+body {
+  margin: 0;
+  font-family: Andika;
+  background-color: #252422;  
+}
+.myProfile{
+  border: 5px solid red;
+}

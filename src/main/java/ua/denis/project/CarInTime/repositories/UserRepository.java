@@ -1,4 +1,4 @@
-package ua.denis.project.CarInTime.repository;
+package ua.denis.project.CarInTime.repositories;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

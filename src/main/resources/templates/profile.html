@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" th:href="@{/css/main.css}" href="../static/css/main.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap'); </style>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+</head>
+<body>
+    <div class="myProfile">
+        <p>My profile</p>
+        <div class="user-information">
+            <p th:text="${username}"/>
+            <p><img th:src="${imageLink}" alt="Your profile photo"></p>
+            <p><span th:text="${fullName}"/></p>
+            <p>All offers: <span th:text="${allOffersCount}"/></p>
+            <p></p>
+
+        </div>
+    </div>
+</body>
+</html>
