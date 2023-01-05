@@ -15,10 +15,6 @@ public class CarInTimeApplication {
 		SpringApplication.run(CarInTimeApplication.class, args);
 	}
 
-	@GetMapping("/salam")
-	public String salam(@RequestParam(value = "name", defaultValue = "world!") String second){
-		return String.format("Salam %s", second);
-	}
 
 
 }
