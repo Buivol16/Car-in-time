@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   color: #FFFCF2;
-
+  
 }
 
 body {
@@ -12,7 +12,7 @@ background-color: #252422;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  width: 100%;
 }
 
 /* Global Styles */
@@ -104,4 +104,88 @@ input {
   top: 3px;
   left: 45%;
   background-color: #FFFCF2;
+}
+.user-information{
+  left: 0%;
+
+}
+.profilePicture{
+  border: #403D39 solid 1px;
+  border-radius: 100px;
+  max-width: 150px;
+  max-height: 150px;
+}
+.separate-lineFull{
+  width: 100%;
+  height: 1px;
+  background-color: #403D39;
+  margin: auto;
+}
+.separate-line1{
+  width: 50%;
+  height: 1px;
+  background-color: #403D39;
+  margin: auto;
+}
+.myProfile{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 13%;
+  border: 0.5px solid #403D39;
+  border-radius: 10px;
+  padding: 5px;
+}
+.profileText{
+  margin-left: 30px;
+}
+.icon1{
+  position: absolute;
+  bottom: 291px;
+  left: 10px;
+}
+.icon2{
+  position: absolute;
+  bottom: 232px;
+  left: 10px;
+}
+.icon3{
+  position: absolute;
+  bottom: 172px;
+  left: 10px;
+}
+.icon4{
+  position: absolute;
+  bottom: 113px;
+}
+.offersDiv{
+  position: absolute;
+  left: 500px;
+  top: 100px;
+  border: 0.5px solid #403D39;
+  border-radius: 10px;
+  padding: 10px;
+  list-style-type: none;
+}
+.offer{
+  border: 0.5px solid #403D39;
+  border-radius: 10px;
+  padding: 10px;
+}
+.offerPrice{
+  color: #D2FFC2;
+}
+.offerList{
+  margin: 5px;
+  padding: 10px;
+}
+.offerImage{
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+a{
+  text-decoration: none;
 }

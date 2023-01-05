@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" th:href="@{/css/main.css}" href="../static/css/main.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap'); </style>
+    <meta charset="UTF-8">
+    <title th:text="${offer.getName()}"></title>
+</head>
+<body>
+<div class="offerCon">
+    <img th:src="${offer.getImgLink()}" alt=""><br>
+    <span th:text="${offer.getName()}"/><br>
+    <span th:text="${offer.getPrice()}" class="offerPrice"/><span class="offerPrice"> UAH/h</span><br>
+    <span>Description:</span><br><span th:text="${offer.getDescription()}"/><br>
+    <span>Author: </span><a th:href="@{/profile?id={id}(id=${offer.getAuthor().getId()})}"><span th:text="${offer.getAuthor().getFullName()}"/></a>
+</div>
+</body>
+</html>

@@ -13,6 +13,7 @@ import lombok.Setter;
 @Getter @Setter
 public class Cookie {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @Column(name = "cookieValue")
     private String cookieValue;

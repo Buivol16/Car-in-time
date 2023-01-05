@@ -7,16 +7,34 @@
     <title th:text="${title}"></title>
 </head>
 <body>
-    <div class="myProfile">
-        <p>My profile</p>
+    <div class="myProfile" align="left">
         <div class="user-information">
-            <p th:text="${username}"/>
-            <p><img th:src="${imageLink}" alt="Your profile photo"></p>
-            <p><span th:text="${fullName}"/></p>
-            <p>All offers: <span th:text="${allOffersCount}"/></p>
-            <p></p>
-
+            <p th:text="${username}" align="center"/>
+            <p align="center"><img th:src="${imageLink}" alt="Your profile photo" class="profilePicture"></p>
+            <div class="separate-line1"></div>
+            <p class="profileText"><span th:text="${fullName}"/></p>
+            <div class="separate-line1"></div>
+            <img th:src="@{/img/offer.png}" src="../static/img/offer.png" class="icon1"><p class="profileText">Offers count: <span th:text="${allOffersCount}"/></p>
+            <div class="separate-line1"></div>
+            <img th:src="@{/img/rating.png}" src="../static/img/rating.png" class="icon2"><p class="profileText">Rating: <span th:text="${ratingCount}"/></p>
+            <div class="separate-line1"></div>
+            <img th:src="@{/img/feedbacks.png}" src="../static/img/feedbacks.png" class="icon3"><p class="profileText">Feedbacks: <a th:href="@{/}"><span th:text="${feedbacksCount}"/></a></p>
+            <div class="separate-line1"></div>
+            <img th:src="@{/img/withUs.png}" src="../static/img/withUs.png" class="icon4"><p class="profileText">Already with us: <span th:text="${liveCount}"/></p>
+            <div class="separate-line1"></div>
+            <p align="center"><a th:href="@{/changeinformation}"><input type="button" value="Change information" class="effect-4"></a></p>
         </div>
     </div>
+    <div class="offersDiv">
+       <li th:each="offer : ${offersList}" class="offerList">
+           <a href="#" th:href="@{/offer?id={id}(id=${offer.getId()})}"><div class="offer">
+            <img th:src="*{offer.getImgLink()}" alt="Car's image" class="offerImage">
+                <span th:text="*{offer.getName()}"/><br>
+               <span th:text="*{offer.getPrice()}" class="offerPrice"/><span class="offerPrice"> UAH/h</span><br>
+                Description:<br><span th:text="*{offer.getDescription()}"/><br>
+           </div></a>
+       </li> 
+    </div>
+    <p><a th:href="@{/addoffer}"><input type="button" value="Add offer" class="effect-4"></a></p>
 </body>
 </html>
