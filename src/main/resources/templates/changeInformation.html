@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" type="text/css" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap'); </style>
+    <title>Changing information</title>
+</head>
+<body>
+    <div class="container" style="display: flex;
+                justify-content: center;">
+        <form action="#" th:action="@{/changeinformation}" th:object="${profile}" method="post">
+            <div class="input-group">
+                <input type="text" id="effect4" class="effect-4" placeholder=" " th:field="*{fullName}"/>
+                <label for="effect4">Full name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="effect-4" placeholder=" " th:field="*{username}"/>
+                <label for="effect4">Username</label>
+            </div>
+            <div class="input-group">
+                <input type="text" class="effect-4" placeholder=" " th:field="*{imgLink}"/>
+                <label for="effect4">Image link</label>
+            </div>
+            <input type="submit" class="effect-4" value="Confirm"/>
+        </form>
+    </div>
+</body>
+</html>

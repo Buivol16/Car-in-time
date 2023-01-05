@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="../static/css/main.css" th:href="@{/css/main.css}" type="text/css" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Andika&display=swap'); </style>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    
+<h2 align="center">Register page</h2>
+<div class="container" style="display: flex;
+            justify-content: center;">
+    <form action="#" th:action="@{/register}" th:object="${user}" method="post">
+        <div class="input-group">
+            <input type="text" id="effect4" class="effect-4" placeholder=" " th:field="*{email}"/>
+            <label for="effect4">Email</label>
+        </div>
+        <div class="input-group">
+            <input type="password" class="effect-4" placeholder=" " th:field="*{password}"/>
+            <label for="effect4">Password</label>
+        </div>
+        <input type="submit" class="effect-4" value="Register me"/>
+    </form>
+  </div>
+</body>
+</html>
