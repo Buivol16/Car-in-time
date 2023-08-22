@@ -1,12 +1,12 @@
-package ua.denis.project.CarInTime.controllers;
+package ua.denys.CarInTime.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ua.denis.project.CarInTime.model.Feedback;
-import ua.denis.project.CarInTime.repositories.FeedbackRepository;
+import ua.denys.CarInTime.model.Feedback;
+import ua.denys.CarInTime.repositories.FeedbackRepository;
 
 import java.util.List;
 

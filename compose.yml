@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    container_name: Car-In-Time_POSTGRESQL
+    restart: always
+    environment:
+      POSTGRES_DB: car_rent
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: admin
+    ports:
+      - 5432:5432

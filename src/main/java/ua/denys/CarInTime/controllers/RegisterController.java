@@ -1,4 +1,4 @@
-package ua.denis.project.CarInTime.controllers;
+package ua.denys.CarInTime.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import ua.denis.project.CarInTime.model.Profile;
-import ua.denis.project.CarInTime.model.User;
-import ua.denis.project.CarInTime.repositories.ProfileRepository;
-import ua.denis.project.CarInTime.repositories.UserRepository;
-import ua.denis.project.CarInTime.services.HashingService;
-import ua.denis.project.CarInTime.services.RegisterService;
+import ua.denys.CarInTime.model.Profile;
+import ua.denys.CarInTime.model.User;
+import ua.denys.CarInTime.services.HashingService;
+import ua.denys.CarInTime.services.RegisterService;
+import ua.denys.CarInTime.repositories.ProfileRepository;
+import ua.denys.CarInTime.repositories.UserRepository;
 
 import java.security.NoSuchAlgorithmException;
 import java.time.LocalDate;

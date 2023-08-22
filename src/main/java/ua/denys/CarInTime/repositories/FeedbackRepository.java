@@ -1,10 +1,10 @@
-package ua.denis.project.CarInTime.repositories;
+package ua.denys.CarInTime.repositories;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import ua.denis.project.CarInTime.model.Feedback;
+import ua.denys.CarInTime.model.Feedback;
 
 import java.util.List;
 

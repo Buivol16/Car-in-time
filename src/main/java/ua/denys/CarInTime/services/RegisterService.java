@@ -1,8 +1,8 @@
-package ua.denis.project.CarInTime.services;
+package ua.denys.CarInTime.services;
 
 
 import org.springframework.stereotype.Service;
-import ua.denis.project.CarInTime.model.User;
+import ua.denys.CarInTime.model.User;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

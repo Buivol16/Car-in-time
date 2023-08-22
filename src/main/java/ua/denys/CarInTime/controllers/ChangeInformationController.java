@@ -1,12 +1,12 @@
-package ua.denis.project.CarInTime.controllers;
+package ua.denys.CarInTime.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ua.denis.project.CarInTime.model.Profile;
-import ua.denis.project.CarInTime.repositories.ProfileRepository;
+import ua.denys.CarInTime.model.Profile;
+import ua.denys.CarInTime.repositories.ProfileRepository;
 
 @Controller
 @RequestMapping(path = "/changeinformation")
@@ -21,8 +21,8 @@ public class ChangeInformationController {
         return "changeInformation";
     }
     @PostMapping
-    public String changeInformation(@ModelAttribute(value = "profile") ua.denis.project.CarInTime.model.Profile profile, @CookieValue(value = "_bym") String id){
-        ua.denis.project.CarInTime.model.Profile profile1 = profileRepository.getByUserId(Long.parseLong(id));
+    public String changeInformation(@ModelAttribute(value = "profile") Profile profile, @CookieValue(value = "_bym") String id){
+        Profile profile1 = profileRepository.getByUserId(Long.parseLong(id));
         if (!profile.getFullName().isBlank()) profile1.setFullName(profile.getFullName());
         if (!profile.getImgLink().isBlank()) profile1.setImgLink(profile.getImgLink());
         if (!profile.getUsername().isBlank()) profile1.setUsername(profile.getUsername());

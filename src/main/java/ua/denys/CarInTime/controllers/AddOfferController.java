@@ -1,14 +1,14 @@
-package ua.denis.project.CarInTime.controllers;
+package ua.denys.CarInTime.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ua.denis.project.CarInTime.model.Offer;
-import ua.denis.project.CarInTime.model.Profile;
-import ua.denis.project.CarInTime.repositories.OfferRepository;
-import ua.denis.project.CarInTime.repositories.ProfileRepository;
+import ua.denys.CarInTime.model.Offer;
+import ua.denys.CarInTime.model.Profile;
+import ua.denys.CarInTime.repositories.OfferRepository;
+import ua.denys.CarInTime.repositories.ProfileRepository;
 
 @Controller
 @RequestMapping(path = "/addoffer")

@@ -1,4 +1,4 @@
-package ua.denis.project.CarInTime;
+package ua.denys.CarInTime;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

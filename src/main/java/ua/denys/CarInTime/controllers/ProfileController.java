@@ -1,4 +1,4 @@
-package ua.denis.project.CarInTime.controllers;
+package ua.denys.CarInTime.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +8,16 @@ import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import ua.denis.project.CarInTime.model.*;
-import ua.denis.project.CarInTime.repositories.*;
-import ua.denis.project.CarInTime.services.AccountService;
+import ua.denys.CarInTime.model.Cookie;
+import ua.denys.CarInTime.model.Offer;
+import ua.denys.CarInTime.model.Profile;
+import ua.denys.CarInTime.repositories.CookieRepository;
+import ua.denys.CarInTime.repositories.FeedbackRepository;
+import ua.denys.CarInTime.repositories.OfferRepository;
+import ua.denys.CarInTime.repositories.ProfileRepository;
+import ua.denys.CarInTime.services.AccountService;
+import ua.denys.project.CarInTime.model.*;
+import ua.denys.project.CarInTime.repositories.*;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -36,7 +43,7 @@ public class ProfileController {
         if (userId == null) return "redirect:/profile?id="+cookieUserId;
         try{
             Cookie cookie1 = cookieRepository.getByCookieValue(cookieValue);
-            ua.denis.project.CarInTime.model.Profile profile = profileRepository.getByUserId(userId);
+            Profile profile = profileRepository.getByUserId(userId);
             List<Offer> offers = offerRepository.getByAuthorId(userId);
             String count = accountService.countDays(LocalDate.parse(profile.getDateWhenConnected(), DateTimeFormatter.ofPattern("dd.MM.yyyy")));
 

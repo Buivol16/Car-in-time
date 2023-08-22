@@ -1,4 +1,4 @@
-package ua.denis.project.CarInTime.model;
+package ua.denys.CarInTime.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

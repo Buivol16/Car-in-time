@@ -1,4 +1,4 @@
-package ua.denis.project.CarInTime.services;
+package ua.denys.CarInTime.services;
 
 import com.google.common.hash.Hashing;
 import org.springframework.stereotype.Service;

@@ -1,10 +1,10 @@
-package ua.denis.project.CarInTime.services;
+package ua.denys.CarInTime.services;
 
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ua.denis.project.CarInTime.model.User;
-import ua.denis.project.CarInTime.repositories.UserRepository;
+import ua.denys.CarInTime.model.User;
+import ua.denys.CarInTime.repositories.UserRepository;
 
 import java.time.LocalDate;
 
